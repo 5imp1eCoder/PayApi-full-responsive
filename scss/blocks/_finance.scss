@@ -1,0 +1,53 @@
+// Finance section
+
+.finance {
+    display: flex;
+    gap: 30px;
+  }
+  .finance__item {
+    max-width: 350px;
+    text-align: center;
+  }
+  .finance__item-img {
+    margin-bottom: 32px;
+  }
+  .finance__item-title {
+    color: var(--clr-black);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 16px;
+  }
+  .finance__item-text {
+    color: rgb(108, 130, 148);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  @media (max-width: 840px) {
+    .finance {
+      gap: 10px;
+      justify-content: center;
+    }
+    .finance__item {
+      max-width: 223px;
+    }
+    .finance__item-img {
+      width: 88px;
+      height: 88px;
+    }
+  }
+  @media (max-width: 665px) {
+    .finance {
+      flex-direction: column;
+      gap: 48px;
+      align-items: center;
+    }
+    .finance__item {
+      max-width: 328px;
+    }
+    .finance__item-img {
+      width: 106px;
+      height: 106px;
+    }
+  }

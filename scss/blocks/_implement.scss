@@ -1,0 +1,66 @@
+// Implement section
+
+.implement-section {
+    padding-top: 150px;
+  }
+  .implement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .implement__img {
+    object-fit: cover;
+    width: 500px;
+    height: 320px;
+  }
+  .implement__content-wrapper {
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+  }
+  .implement__title {
+    color: var(--clr-black);
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+  .implement__text {
+    color: rgb(108, 130, 148);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  @media (max-width: 840px) {
+    .implement-section {
+      padding-top: 100px;
+    }
+    .implement {
+      flex-direction: column;
+      gap: 48px;
+    }
+    .implement__img {
+      width: 410px;
+      height: 250px;
+    }
+    .implement__content-wrapper {
+      max-width: 573px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 665px) {
+    .implement-section {
+      padding-top: 66px;
+    }
+    .implement__img {
+      width: 328px;
+      height: 209px;
+    }
+    .implement__title {
+      font-size: 36px;
+    }
+    .implement__content-wrapper {
+      max-width: 328px;
+    }
+
+  }

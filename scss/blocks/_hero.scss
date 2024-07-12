@@ -1,0 +1,126 @@
+// Hero section
+
+.hero {
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+  .hero__content-wrapper {
+    max-width: 546px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero__title {
+    color: rgb(54, 83, 107);
+    font-family: "DM Serif Display";
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 21px;
+  }
+  
+  .hero__form-wrapper {
+    position: relative;
+    max-width: 445px;
+    margin-bottom: 16px;
+  }
+  .hero__input {
+    width: 100%;
+    padding: 17px 26px;
+    border-radius: 24px;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    background-color: rgb(251, 252, 254);
+    border: none;
+    outline: none;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--clr-black);
+    transition: all 0.3s linear;
+  }
+  .hero__input:focus {
+    box-shadow: 0 0 10px 3px var(--clr-red);
+  }
+  .hero__input::placeholder {
+    color: var(--clr-black);
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0.5;
+  }
+  .hero__btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .hero__text-wrapper {
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+  .hero__text {
+    color: rgb(108, 130, 148);
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .hero__link {
+    color: rgb(108, 130, 148);
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .hero__img {
+    object-fit: cover;
+    max-width: 263px;
+  }
+  @media (max-width: 840px) {
+    body {
+      background-image: url("../images/body-bg-tablet.png");
+      background-position: center top;
+      background-size: 100%;
+    }
+    .hero-section {
+      padding: 48px 0 100px;
+    }
+    .hero {
+      padding: 0;
+      flex-direction: column-reverse;
+      gap: 0;
+    }
+    .hero__content-wrapper {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero__text-wrapper {
+      margin: 0 auto;
+    }
+    .hero__form-wrapper {
+      width: 445px;
+    }
+    .hero__title {
+      font-size: 48px;
+    }
+    .hero__img {
+      margin-bottom: 48px;
+    }  
+  }
+  @media (max-width: 665px) {
+    .hero__form-wrapper {
+      width: 350px;
+    }
+    .hero__text-wrapper {
+      text-align: center;
+    }
+    .hero__title {
+      font-size: 32px;
+    }
+    .hero__btn {
+      position: static;
+      display: block;
+      width: 100%;
+      margin-top: 16px;
+    }
+  }
